@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AreaTest {
     @Test
-    public void testSoma() {
+    public void testArea() {
         Retangulo ret1 = new Retangulo(3,5);
         Retangulo ret2 = new Retangulo(5,8);
         Retangulo ret3 = new Retangulo(2,4);

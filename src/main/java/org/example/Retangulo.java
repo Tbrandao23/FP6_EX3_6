@@ -4,10 +4,14 @@ public class Retangulo {
     int largura;
     int comprimento;
 
+    public Retangulo() {
+    }
+
     public Retangulo(int largura, int comprimento) {
         this.largura = largura;
         this.comprimento = comprimento;
     }
+
 
     public int getLargura() {
         return largura;
@@ -29,8 +33,8 @@ public class Retangulo {
         return r.comprimento * r.largura;
     }
 
-    public int perimetro (int base, int altura){
-        return (2*base) + (2*altura);
+    public int perimetro (Retangulo r){
+        return (2*r.comprimento) + (2*r.largura);
     }
 
     public boolean isTriangle(int a, int b, int c){
