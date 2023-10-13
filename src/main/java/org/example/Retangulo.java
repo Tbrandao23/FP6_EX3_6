@@ -25,11 +25,23 @@ public class Retangulo {
         this.comprimento = comprimento;
     }
 
-    public int area (int base, int altura){
-        return base * altura;
+    public int area (Retangulo r){
+        return r.comprimento * r.largura;
     }
 
     public int perimetro (int base, int altura){
         return (2*base) + (2*altura);
+    }
+
+    public boolean isTriangle(int a, int b, int c){
+        boolean val = false;
+        if(a < b+c){
+            if(b < a+ c){
+                if(c < b +a){
+                    val = true;
+                }
+            }
+        }
+        return val;
     }
 }
